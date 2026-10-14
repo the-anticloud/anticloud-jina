@@ -1,0 +1,30 @@
+{
+ "evidence": {
+  "authority": "FedRAMP",
+  "command": "python tools/run_bench.py --only fedramp",
+  "control_ids": [
+   "IA-2",
+   "IA-5",
+   "RA-5",
+   "SA-4",
+   "SA-10",
+   "SA-11",
+   "SC-7",
+   "SC-8",
+   "SC-13",
+   "SI-2"
+  ],
+  "controls_mapped": 10,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 10,
+  "coverage_command": "anticloud-ref bench --framework fedramp   # 10/10 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "FedRAMP Rev. 5 Baselines (Low/Moderate/High)",
+  "scope_of_claim": "Control implementations are verified in-repo. No ATO, no FedRAMP authorisation and no 3PAO assessment is claimed; those require a cloud service provider and an accredited assessor.",
+  "unverified_detail": []
+ },
+ "id": "12_fedramp",
+ "ok": true,
+ "status": "PASS",
+ "title": "FedRAMP Rev. 5"
+}

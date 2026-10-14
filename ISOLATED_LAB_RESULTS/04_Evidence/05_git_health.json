@@ -1,0 +1,20 @@
+{
+ "evidence": {
+  "branch": "main",
+  "command": "git status --porcelain && git log --oneline -1 && git fsck --no-progress",
+  "commits": 16,
+  "gitignore_present": true,
+  "governed_by_changelog": true,
+  "head": "72e92905f08750f7d2106316c54e75ccb2512895",
+  "latest_commit": "72e9290 licence: word-boundary the 'no permission is hereby granted' rider",
+  "remotes": [],
+  "repo": true,
+  "tags": [],
+  "untracked_or_modified": [],
+  "working_tree_clean": true
+ },
+ "id": "05_git_health",
+ "ok": true,
+ "status": "PASS",
+ "title": "Git health"
+}

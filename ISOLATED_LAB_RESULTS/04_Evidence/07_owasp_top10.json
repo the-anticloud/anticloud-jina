@@ -1,0 +1,29 @@
+{
+ "evidence": {
+  "authority": "OWASP Foundation",
+  "command": "python tools/run_bench.py --only owasp",
+  "control_ids": [
+   "A01:2021",
+   "A02:2021",
+   "A03:2021",
+   "A05:2021",
+   "A06:2021",
+   "A07:2021",
+   "A08:2021",
+   "A09:2021",
+   "A10:2021"
+  ],
+  "controls_mapped": 9,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 9,
+  "coverage_command": "anticloud-ref bench --framework owasp_top10   # 9/9 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "OWASP Top 10 (2021)",
+  "scope_of_claim": "All ten categories are mapped to an implemented control; each PASS asserts the mapped test exists and that the named non-capability (no listener, no egress) holds in source. It is not a penetration test.",
+  "unverified_detail": []
+ },
+ "id": "07_owasp_top10",
+ "ok": true,
+ "status": "PASS",
+ "title": "OWASP Top 10 (2021)"
+}

@@ -1,0 +1,28 @@
+{
+ "evidence": {
+  "authority": "NIST AI RMF",
+  "command": "python tools/run_bench.py --only nist",
+  "control_ids": [
+   "GOVERN-1.1",
+   "GOVERN-2.2",
+   "MAP-1.1",
+   "MAP-3.5",
+   "MEASURE-2.7",
+   "MEASURE-2.8",
+   "MANAGE-2.2",
+   "MANAGE-4.1"
+  ],
+  "controls_mapped": 8,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 8,
+  "coverage_command": "anticloud-ref bench --framework nist_ai_rmf   # 8/8 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "NIST AI Risk Management Framework 1.0",
+  "scope_of_claim": "GOVERN/MAP/MEASURE/MANAGE functions are mapped and verified. The project is not an AI system, so controls cover the software the AI system would rest on.",
+  "unverified_detail": []
+ },
+ "id": "09_nist_ai_rmf",
+ "ok": true,
+ "status": "PASS",
+ "title": "NIST AI Risk Management Framework"
+}

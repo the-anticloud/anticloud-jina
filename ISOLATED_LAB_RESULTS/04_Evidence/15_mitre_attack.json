@@ -1,0 +1,32 @@
+{
+ "evidence": {
+  "authority": "MITRE",
+  "command": "python tools/run_bench.py --only mitre",
+  "control_ids": [
+   "T1078",
+   "T1552",
+   "T1552.001",
+   "T1553",
+   "T1195.002",
+   "T1221",
+   "T1600.002",
+   "T1499",
+   "T1565",
+   "T1565.001",
+   "T1530",
+   "T1619"
+  ],
+  "controls_mapped": 12,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 12,
+  "coverage_command": "anticloud-ref bench --framework mitre_attack   # 12/12 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "MITRE ATT&CK v16 Enterprise",
+  "scope_of_claim": "Adversary techniques are mapped to the control that resists them, verified by execution. This is not adversary emulation or a purple-team exercise.",
+  "unverified_detail": []
+ },
+ "id": "15_mitre_attack",
+ "ok": true,
+ "status": "PASS",
+ "title": "MITRE ATT&CK v16"
+}

@@ -1,0 +1,65 @@
+{
+ "evidence": {
+  "a_licences": [
+   "Apache-2.0",
+   "BSD-2-Clause",
+   "BSD-3-Clause",
+   "ISC",
+   "MIT",
+   "MPL-2.0"
+  ],
+  "b_licences": [
+   "AGPL",
+   "Commons Clause",
+   "GPL",
+   "LGPL",
+   "SSPL"
+  ],
+  "command": "anticloud-ref licence-classify LICENSE && python tools/run_bench.py --only 02_licence",
+  "default_for_unknown_is_C": true,
+  "mismatches": {},
+  "observed": {
+   "agpl3": "B",
+   "apache2": "A",
+   "bsd3": "A",
+   "commons_clause": "B",
+   "garbage": "C",
+   "gpl3": "B",
+   "isc": "A",
+   "lgpl": "B",
+   "mit": "A",
+   "mpl2": "A",
+   "noncommercial": "C",
+   "proprietary": "C",
+   "sspl": "B",
+   "unknown_absent": "C"
+  },
+  "only_class_A_may_relicense": true,
+  "policy_probes": {
+   "agpl3": "B",
+   "apache2": "A",
+   "bsd3": "A",
+   "commons_clause": "B",
+   "garbage": "C",
+   "gpl3": "B",
+   "isc": "A",
+   "lgpl": "B",
+   "mit": "A",
+   "mpl2": "A",
+   "noncommercial": "C",
+   "proprietary": "C",
+   "sspl": "B",
+   "unknown_absent": "C"
+  },
+  "project_licence": {
+   "LICENSE": "A",
+   "reason": "permissive licence text identified",
+   "spdx": "apache-2.0"
+  },
+  "pyproject_declared": "Apache-2.0"
+ },
+ "id": "02_licence",
+ "ok": true,
+ "status": "PASS",
+ "title": "Licence posture (A/B/C policy)"
+}

@@ -1,0 +1,20 @@
+{
+ "evidence": {
+  "command": "python -c \"import json;d=json.load(open('sbom.cdx.json'));print(d['bomFormat'],d['specVersion'],len(d['components']))\"",
+  "components": 4,
+  "components_with_licence": 4,
+  "components_with_sha256": 3,
+  "dependency_edges": 5,
+  "file": "sbom.cdx.json",
+  "format": "CycloneDX",
+  "generated_from": "live importlib.metadata + requirements.lock, no hand-written list",
+  "malformed_purls": [],
+  "missing_required_fields": [],
+  "serial_number": "urn:uuid:aabaca55-eaf5-4b73-a549-14e6e575f143",
+  "spec_version": "1.5"
+ },
+ "id": "04_sbom_cyclonedx",
+ "ok": true,
+ "status": "PASS",
+ "title": "SBOM (CycloneDX 1.5)"
+}

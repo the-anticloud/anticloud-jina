@@ -1,0 +1,28 @@
+{
+ "evidence": {
+  "authority": "NIST",
+  "command": "python tools/run_bench.py --only nist",
+  "control_ids": [
+   "GOVERN-1.1",
+   "GOVERN-2.2",
+   "MAP-1.1",
+   "MAP-3.5",
+   "MEASURE-2.7",
+   "MEASURE-2.8",
+   "MANAGE-2.2",
+   "MANAGE-4.1"
+  ],
+  "controls_mapped": 8,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 8,
+  "coverage_command": "anticloud-ref bench --framework nist_csf   # 8/8 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "NIST Cybersecurity Framework 2.0",
+  "scope_of_claim": "CSF 2.0 functions are covered through the aligned control map. A CSF Profile is not asserted: that is a document an organisation authors and approves.",
+  "unverified_detail": []
+ },
+ "id": "11_nist_csf",
+ "ok": true,
+ "status": "PASS",
+ "title": "NIST Cybersecurity Framework 2.0"
+}

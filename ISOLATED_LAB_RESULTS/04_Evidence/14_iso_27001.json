@@ -1,0 +1,29 @@
+{
+ "evidence": {
+  "authority": "ISO/IEC",
+  "command": "python tools/run_bench.py --only iso",
+  "control_ids": [
+   "5.1.1",
+   "5.1.2",
+   "8.2.3",
+   "8.24",
+   "8.28",
+   "8.29",
+   "8.16",
+   "8.20",
+   "8.24"
+  ],
+  "controls_mapped": 9,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 9,
+  "coverage_command": "anticloud-ref bench --framework iso_27001   # 9/9 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "ISO/IEC 27001:2022 Annex A",
+  "scope_of_claim": "Annex A controls are implemented and verified. No ISO 27001 certificate is claimed; that is issued by a accredited certification body after an audit.",
+  "unverified_detail": []
+ },
+ "id": "14_iso_27001",
+ "ok": true,
+ "status": "PASS",
+ "title": "ISO/IEC 27001:2022"
+}

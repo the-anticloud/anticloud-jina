@@ -1,0 +1,61 @@
+{
+ "evidence": {
+  "claimed_level": 8,
+  "command": "python tools/run_bench.py --only 16 && cat docs/18_TRL_JUSTIFICATION/TRL.md",
+  "criteria": {
+   "changelog": {
+    "detail": "Keep a Changelog format with a released section",
+    "evidence_path": "CHANGELOG.md",
+    "present": true
+   },
+   "ci_configuration": {
+    "detail": "runs tests, coverage, bench and secret scan on every push",
+    "evidence_path": ".github/workflows/ci.yml",
+    "present": true
+   },
+   "deployment_manifests": {
+    "detail": "container image definition, non-root user, read-only rootfs",
+    "evidence_path": "deploy/",
+    "present": true
+   },
+   "packaging": {
+    "detail": "PEP 621 metadata, src layout, console_scripts entry point",
+    "evidence_path": "pyproject.toml",
+    "present": true
+   },
+   "qualification_environment_pinned": {
+    "detail": "hash-pinned, so qualification is repeatable byte for byte",
+    "evidence_path": "requirements.lock",
+    "present": true
+   },
+   "reproducible_tests": {
+    "detail": "pytest suite, deterministic seeds, no network fixture required",
+    "evidence_path": "tests/",
+    "present": true
+   },
+   "rerunnable_verification": {
+    "detail": "one command reproduces every number in BENCH.json",
+    "evidence_path": "tools/run_bench.py",
+    "present": true
+   },
+   "versioning": {
+    "detail": "single source of truth, currently 1.0.0",
+    "evidence_path": "src/anticloud_ref/_version.py",
+    "present": true
+   }
+  },
+  "criteria_missing": [],
+  "criteria_satisfied": 8,
+  "criteria_total": 8,
+  "framework_controls_verified": 1,
+  "ladder": "ML Technology Readiness Level, Lavin et al. 2022 (TMLR)",
+  "observed_level": 8,
+  "source": "22_COMPLIANCE_FRAMEWORKS/FACTS.md",
+  "trL9_claimed": false,
+  "trL9_reason": "requires proven success in an operational environment, which cannot be asserted from a repository"
+ },
+ "id": "16_ml_trl",
+ "ok": true,
+ "status": "PASS",
+ "title": "ML Technology Readiness Level 8"
+}

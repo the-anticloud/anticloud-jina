@@ -1,0 +1,32 @@
+{
+ "evidence": {
+  "authority": "NIST",
+  "command": "python tools/run_bench.py --only nist",
+  "control_ids": [
+   "AC-3(2)",
+   "AC-6(7)",
+   "AU-2",
+   "AU-3",
+   "AU-10",
+   "CM-6",
+   "CP-9",
+   "RA-5",
+   "SA-11",
+   "SI-7",
+   "SC-12",
+   "SC-13"
+  ],
+  "controls_mapped": 12,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 12,
+  "coverage_command": "anticloud-ref bench --framework nist_800_53   # 12/12 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "NIST SP 800-53 Rev. 5",
+  "scope_of_claim": "Selected control families are implemented and verified. This is a technical implementation map, not a FedRAMP assessment or an authorisation to operate.",
+  "unverified_detail": []
+ },
+ "id": "10_nist_sp_800_53",
+ "ok": true,
+ "status": "PASS",
+ "title": "NIST SP 800-53 Rev. 5"
+}

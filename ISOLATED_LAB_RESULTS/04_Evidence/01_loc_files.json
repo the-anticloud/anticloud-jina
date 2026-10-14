@@ -1,0 +1,22 @@
+{
+ "evidence": {
+  "ceilings": {
+   "max_files": 120,
+   "max_lines": 20000,
+   "min_lines": 2000
+  },
+  "code_lines": 6889,
+  "command": "python tools/run_bench.py --only 01_loc_files",
+  "counts_command": "find src tests tools -name '*.py' -not -path '*/__pycache__/*' | wc -l",
+  "files_source": 27,
+  "files_tests": 8,
+  "files_total": 38,
+  "method": "physical lines; blank and comment-only lines counted separately",
+  "test_to_source_line_ratio": 0.35,
+  "total_lines": 8402
+ },
+ "id": "01_loc_files",
+ "ok": true,
+ "status": "PASS",
+ "title": "Code size and file count"
+}

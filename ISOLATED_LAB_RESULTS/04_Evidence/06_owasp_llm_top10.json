@@ -1,0 +1,30 @@
+{
+ "evidence": {
+  "authority": "OWASP Foundation",
+  "command": "python tools/run_bench.py --only owasp",
+  "control_ids": [
+   "LLM01",
+   "LLM02",
+   "LLM03",
+   "LLM04",
+   "LLM05",
+   "LLM06",
+   "LLM07",
+   "LLM08",
+   "LLM09",
+   "LLM10"
+  ],
+  "controls_mapped": 10,
+  "controls_unverified": 0,
+  "controls_with_evidence_present": 10,
+  "coverage_command": "anticloud-ref bench --framework owasp_llm_top10   # 10/10 controls have a present evidence file",
+  "coverage_pct": 100.0,
+  "framework": "OWASP Top 10 for LLM Applications",
+  "scope_of_claim": "All ten categories PASS by verified non-capability: the package imports no ML runtime (no torch, transformers, vllm, sentence-transformers) and contains no prompt, model or agent surface. A PASS means the risk is structurally absent, not mitigated.",
+  "unverified_detail": []
+ },
+ "id": "06_owasp_llm_top10",
+ "ok": true,
+ "status": "PASS",
+ "title": "OWASP Top 10 for LLM Applications"
+}
