@@ -541,9 +541,11 @@
  "license": "Apache-2.0",
  "source": {
   "git": {
-   "tree_sha3": "15b06516ad270c1badee68d8cdb14990e04f98a9c3ca0f43672240a9d7c3579c",
-   "tree_files": 25,
-   "tree_note": "SHA3-256 over vendored source tree on disk (paths+contents, excl .git); recompute to verify"
+   "url": "https://github.com/jina-ai/reader",
+   "head": "1574bfd380d249c86c82db4dace0d9c8fe17e2b1",
+   "branch": "",
+   "sha_verified_from": "permissive resolve 2026-10-16: MIT/Apache genre match",
+   "previous_upstream": ""
   }
  }
 }
